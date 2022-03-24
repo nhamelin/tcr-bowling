@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BowlingGame;
 
 namespace BowlingGame.Test
 {
