@@ -6,19 +6,21 @@ namespace BowlingGame
 	public class Game
 	{
 		private List<Pins> pins;
-		private int nbPins;
-        public Game(List<Pins> pins)
+
+        public Game()
 		{
-			this.pins = pins;
-			//this.nbPins = nbPins;
+
 		}
 
-		public void  InitNbPins()
+		public List<Pins>  InitPins()
 		{
 			for (int i = 0; i <= 9; i++)
 			{
-				//pins
-}
+				Pins pin = new Pins();
+				pins.Add(pin);
+			}
+
+			return pins;
 		}
 
 

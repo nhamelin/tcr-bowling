@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BowlingGame;
+using System.Collections.Generic;
 
 namespace BowlingGame.Test
 {
@@ -12,11 +13,11 @@ namespace BowlingGame.Test
             int nbPins = 0;
             int expectedNbPins = 10;
 
-            Pins pin = new Pins(1);
-
             Game game = new Game();
 
-            foreach (Pins pin in game.pins[])
+            List<Pins> pins = game.InitPins();
+
+            foreach (Pins pin in pins)
             {
                 nbPins++;
             }
