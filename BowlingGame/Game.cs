@@ -7,6 +7,7 @@ namespace BowlingGame
 	{
 		private List<Pins> pins;
 
+
         public Game()
 		{
 
@@ -14,9 +15,11 @@ namespace BowlingGame
 
 		public List<Pins>  InitPins()
 		{
+			this.pins = new List<Pins>();
+
 			for (int i = 0; i <= 9; i++)
 			{
-				Pins pin = new Pins();
+				Pins pin = new Pins(i);
 				pins.Add(pin);
 			}
 

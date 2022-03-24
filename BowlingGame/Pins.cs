@@ -10,7 +10,7 @@ namespace BowlingGame
     {
         int id;
 
-        public Pins()
+        public Pins(int id)
         {
             this.id = id;
         }
