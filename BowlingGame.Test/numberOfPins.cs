@@ -1,6 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BowlingGame;
-using System;
 
 namespace BowlingGame.Test
 {
@@ -13,9 +12,9 @@ namespace BowlingGame.Test
             int nbPins = 0;
             int expectedNbPins = 10;
 
-            //Game game = new Game();
+            Game game = new Game();
 
-            for (int i = 0; i < 10; i++)
+            foreach (Pins pin in game.pins[])
             {
                 nbPins++;
             }
@@ -36,7 +35,7 @@ namespace BowlingGame.Test
 
             //Game game = new Game();
 
-            //foreach(pins in game.Pins[])
+            //foreach(pins in game.pins[])
             //{
             //    nbPins++;
             //}
