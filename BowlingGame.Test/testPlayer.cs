@@ -8,9 +8,9 @@ namespace BowlingGame.Test
         [TestMethod]
         public void playerTest()
         {
-            Player player new Player();
+            Player player =  new Player("Nicolas");
 
-            StringAssert.DoesNotMatch(expectedNbPins, nbPins, 10, "Nbpins is correctly");
+            StringAssert.Contains(player.getName(), "Nicolas");
         }
     }
 }
