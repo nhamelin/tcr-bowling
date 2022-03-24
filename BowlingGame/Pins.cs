@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlingGame
 {
-    class Pins
+    public class Pins
     {
         int id;
 

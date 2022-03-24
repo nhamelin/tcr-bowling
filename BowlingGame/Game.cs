@@ -5,12 +5,23 @@ namespace BowlingGame
 {
 	public class Game
 	{
-		Pins[] pins = {};
-
-		for(int i = 0; i <= 9; i++)
+		private List<Pins> pins;
+		private int nbPins;
+        public Game(List<Pins> pins)
 		{
-			pins
+			this.pins = pins;
+			//this.nbPins = nbPins;
 		}
+
+		public void  InitNbPins()
+		{
+			for (int i = 0; i <= 9; i++)
+			{
+				//pins
+}
+		}
+
+
 	}
 }
 
