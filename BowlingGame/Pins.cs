@@ -8,7 +8,11 @@ namespace BowlingGame
 {
     class Pins
     {
-        int nbPins = 0;
-        int expectedNbPins = 10;
+        int id;
+
+        public Pins()
+        {
+            this.id = id;
+        }
     }
 }
